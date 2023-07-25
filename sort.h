@@ -32,6 +32,9 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
+void quick_sort_recursive_hoare(int *array, size_t size, ssize_t start, ssize_t end);
+ssize_t hoare_partition(int *array, size_t size, ssize_t start, ssize_t end);
 void swap_head(listint_t **list, listint_t *aux);
 void swap_middle(listint_t *aux);
 void swap_tail(listint_t *aux);
@@ -52,7 +55,6 @@ void array_copy(int *source, int *destiny, size_t size);
 void bitonic_sort(int *array, size_t size);
 void bitonic_sort_recursive(int *array, size_t size, size_t start, size_t end, int dir);
 void bitonic_merge(int *array, size_t size, size_t start, size_t end, int dir);
-void sort_(int *array, size_t low, size_t size, size_t dir, size_t length);
 void swap(int *a, int *b);
 
 #endif
