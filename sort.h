@@ -51,6 +51,6 @@ int **malloc_(size_t copies, size_t size);
 void array_copy(int *source, int *destiny, size_t size);
 void bitonic_sort(int *array, size_t size);
 void sort_(int *array, size_t low, size_t size, size_t dir, size_t length);
-void swap(int *array, size_t i, size_t j, size_t dir);
+void swap(int *a, int *b);
 
 #endif
