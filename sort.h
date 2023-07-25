@@ -50,6 +50,8 @@ int find_maxvalue(int *array, size_t size);
 int **malloc_(size_t copies, size_t size);
 void array_copy(int *source, int *destiny, size_t size);
 void bitonic_sort(int *array, size_t size);
+void bitonic_sort_recursive(int *array, size_t size, size_t start, size_t end, int dir);
+void bitonic_merge(int *array, size_t size, size_t start, size_t end, int dir);
 void sort_(int *array, size_t low, size_t size, size_t dir, size_t length);
 void swap(int *a, int *b);
 
